@@ -1,0 +1,127 @@
+body{
+  display: flex;
+  background: #121212;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  font-family: arial,sans-serif;
+  color: white;
+}
+.pass{
+    width: 250px;
+    padding: 12px;
+    border: 2px solid #444;
+    border-radius: 8px;
+    background: #2a2a3e;
+    color: white;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+    margin-bottom: 10px;
+}
+.pass:focus{
+    border-color: #00d4ff;
+    box-shadow: 0 0 15px #00d4ff;
+}
+.control-panel{
+    height: 700px;
+    width: 500px;
+    color: antiquewhite;
+    border: 5px solid #00d4ff;
+    padding: 20px;
+    border-radius: 15px;
+    background: #1e1e2e;
+    box-shadow: 0 0 20px rgba(0,212,255,0.3);
+}
+.control-panel > div{
+    border: 2px solid #444;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 10px;
+    background: #2a2a3e;
+}
+.bulb{
+    height: 50px;
+    width: 35px;
+    background: #333;
+    margin: 10px 0;
+    transition: 0.3s;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: white;
+}
+.on{
+    background-color: yellow;
+    box-shadow: 0 0 30px yellow;
+}
+.mood-counter{
+    height: 200px;
+    width: 200px;
+    border: 5px solid blue;
+}
+.count{
+    font-style: italic;
+    color: goldenrod;
+}
+.traffic-mood{
+    height: 200px;
+    width: 200px;
+     border: 5px solid gold;
+}
+.lightred{
+    height: 40px;
+    width: 40px;
+    background: #222;
+    margin: 5px;
+    transition: 0.3s;
+    border-radius: 50%;
+    
+}
+.color-red{
+    background-color: red;
+    box-shadow: 0 0 20px red;
+}
+.lightyellow{
+    height: 40px;
+    width: 40px;
+    background: #222;
+    margin: 5px;
+    transition: 0.3s;
+    border-radius: 50%;
+}
+.color-yellow{
+    background-color: yellow;
+    box-shadow: 0 0 20px yellow;
+}
+.lightgreen{
+    height: 40px;
+    width: 40px;
+    background: #222;
+    margin: 5px;
+    transition: 0.3s;
+    border-radius: 50%;
+}
+.color-green{
+    background-color: green;
+    box-shadow: 0 0 20px green;
+}
+.emoji{
+    font-size: 40px;
+    margin: 15px 0;
+    transition: 0.3s;
+}
+button{
+    padding: 8px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 6px;
+    background: linear-gradient(135deg, #00d4ff,#0077ff);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+button:hover{
+    transform: scale(1.05);
+}
