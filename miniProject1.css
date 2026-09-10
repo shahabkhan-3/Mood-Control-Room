@@ -26,19 +26,21 @@ body{
     box-shadow: 0 0 15px #00d4ff;
 }
 .control-panel{
-    height: 700px;
-    width: 500px;
+    min-height: 700px;
+    width: 90%;
+  max-width:700px;
     color: antiquewhite;
     border: 5px solid #00d4ff;
     padding: 20px;
     border-radius: 15px;
     background: #1e1e2e;
     box-shadow: 0 0 20px rgba(0,212,255,0.3);
+    box-sizing: border-box;
 }
 .control-panel > div{
     border: 2px solid #444;
     padding: 15px;
-    margin: 15px;
+    margin: 15px 0;
     border-radius: 10px;
     background: #2a2a3e;
 }
@@ -57,18 +59,23 @@ body{
     box-shadow: 0 0 30px yellow;
 }
 .mood-counter{
-    height: 200px;
-    width: 200px;
+    width: 100%;
+    max-width: 200px;
+    aspect-ratio: 1/1;
     border: 5px solid blue;
+    margin: 10px auto;
 }
 .count{
     font-style: italic;
     color: goldenrod;
 }
 .traffic-mood{
-    height: 200px;
-    width: 200px;
+     width: 100%;
+     max-width: 200px;
+     aspect-ratio: 1/1;
      border: 5px solid gold;
+     margin: 10px auto;
+     border-color: gold;
 }
 .lightred{
     height: 40px;
@@ -124,4 +131,16 @@ button{
 }
 button:hover{
     transform: scale(1.05);
+}
+@media (max-width: 600px){
+  body{
+    padding: 10px;
+  }
+  .control-panel{
+    width: 95%;
+    padding: 15px;
+  }
+  .pass{
+    width: 100%;
+  }
 }
